@@ -1,6 +1,7 @@
 import useID from "../hooks/useID";
 import Home from "../pages/Home";
 import Properties from "../pages/Properties";
+import SignIn from "../pages/Signin";
 export const navbar = [
 	{
 		id: useID,
@@ -17,5 +18,13 @@ export const navbar = [
 		path: "/properties",
 		private: false,
 		hidden: false,
+	},
+	{
+		id: useID,
+		element: <SignIn />,
+		title: "Sign In",
+		path: "/signin",
+		private: false,
+		hidden: true,
 	},
 ];

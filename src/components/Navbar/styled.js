@@ -29,9 +29,9 @@ max-width: 1440px;
 const Section = styled.div`
 display: flex;
 align-items: center;
-cursor: ${({logo})=> logo && "pointer"};
-.active{
-    color: #00f1ffdb;
+cursor: ${({logo})=> (logo && "pointer")};
+:active{
+    color: #adb8b6;
 }
 `
 
