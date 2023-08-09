@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Wrapper, Section, Logo, Link } from "./styled";
+import { Container, Wrapper, Section, Logo, Link, Main } from "./styled";
 import { Outlet, useNavigate } from "react-router-dom";
 import { navbar } from "../../utils/navbar";
 
@@ -7,10 +7,11 @@ export const Navbar = () => {
 	let navigate = useNavigate();
 	return (
 		<Container>
+			<Main>
 			<Wrapper>
 				<Section onClick={() => navigate("/home")} logo="true" >
 					<Logo />
-					<h3>Houzing</h3>
+					<h3>Saladin</h3>
 				</Section>
 				<Section>
 					{navbar.map(({ path, title }, index) => {
@@ -29,6 +30,7 @@ export const Navbar = () => {
 					<button>Sign In </button>
 				</Section>
 			</Wrapper>
+			</Main>		
 			<Outlet />
 		</Container>
 	);
