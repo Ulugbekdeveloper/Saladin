@@ -12,8 +12,9 @@ justify-content: center;
 const Main =  styled.div`
 display: flex;
 justify-content: center;
-background: var(--colorPrimary) ;
+background: var(--colorPrimary);
 `
+
 const Wrapper =  styled.div`
 display: flex;
 align-items: center;
@@ -22,16 +23,16 @@ color: #ffff;
 padding: var(--padding);
 height: 64px;
 font-size: 16px;
-width: 100%;
+width: 100%; 
 max-width: 1440px;
 `
 
 const Section = styled.div`
 display: flex;
 align-items: center;
-cursor: ${({logo})=> logo && "pointer"};
+cursor: ${({logo})=> (logo && "pointer")};
 .active{
-    color: #00f1ffdb;
+    color: #0cb3e8;
 }
 `
 
