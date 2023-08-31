@@ -1,4 +1,4 @@
-import { Container } from "./styled";
+import { Container, Wrapper, Icon} from "./styled";
 
 export const Input = ({
 	type,
@@ -7,21 +7,26 @@ export const Input = ({
 	name,
 	value,
 	defaultValue,
-  width,
-  height
+	width,
+	height,
+	icon,
 }) => {
 	return (
-		<Container
-			placeholder={placeholder}
-			onChange={onChange}
-			type={type}
-			name={name}
-			value={value}
-			defaultValue={defaultValue}
-      width={width}
-      height={height}
-		/>
+		<Wrapper>
+			<Icon>{icon}</Icon>
+			<Container
+				placeholder={placeholder}
+				onChange={onChange}
+				type={type}
+				name={name}
+				value={value}
+				defaultValue={defaultValue}
+				width={width}
+				height={height}
+				icon={icon}
+			/>
+		  </Wrapper>
 	);
 };
 
-// export default Input;
+export default Input;

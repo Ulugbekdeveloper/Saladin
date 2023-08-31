@@ -35,7 +35,7 @@ const Container = styled.button`
 	justify-content: center;
     min-width: 120px;
 	border-radius: 2px;
-    font-size: ${({fonstSize}) => (fonstSize ? `${fonstSize}` : "14px")};
+    font-size: ${({fonstSize}) => (fonstSize ? `${fonstSize}px` : "14px")};
 	height: ${({ height }) => (height ? `${height}px` : "44px")};
 	width: ${({ width }) => (width ? `${width}px` : "130px")};
     cursor: pointer;

@@ -1,7 +1,7 @@
 import {Container} from './styled'
 
-export const Button = ({children, type , signing, width, height}) => {
-  return  <Container onClick={signing} type={type} width={width} height={height}>
+export const Button = ({children, type, onClick, width, height}) => {
+  return  <Container  type={type} onClick={onClick} width={width} height={height}>
     {children || "Generic Button"} 
   </Container>
   
