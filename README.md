@@ -1,8 +1,8 @@
 # Getting Started with Ulug'bek
 
-This project is available on github [Mino](https://https://github.com/Ulugbekdeveloper).
+This project is available on github [Saladin](https://github.com/Ulugbekdeveloper/Saladin).
 
-# con see DEMO [Mino](https://https://netlify.com/Ulugbekdeveloper).
+# con see DEMO [Saladin](https://https://netlify.com/Ulugbekdeveloper).
 ## Available Scripts
 
 In the project directory, you can run:
